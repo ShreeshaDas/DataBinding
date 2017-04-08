@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         setUpRecycleView(mActivityMainBinding.movieList);
-        //getNowPlaying();
+        getNowPlaying();
     }
 
     private void setUpRecycleView(RecyclerView recycleView) {
