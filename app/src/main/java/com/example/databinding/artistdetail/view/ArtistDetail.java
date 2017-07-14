@@ -1,20 +1,8 @@
-package com.example.databinding.artistdetail;
+package com.example.databinding.artistdetail.view;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-
-import com.example.databinding.R;
-import com.example.databinding.databinding.ArtistDetailBinding;
-import com.example.databinding.model.Cast;
-import com.example.databinding.network.ApiClient;
-import com.example.databinding.network.ApiInterface;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 /**
  * Created by shreesha on 13/2/17.
@@ -23,15 +11,13 @@ import retrofit2.Response;
 public class ArtistDetail extends AppCompatActivity {
 
     private static final String TAG = ArtistDetail.class.getSimpleName();
-    private ArtistDetailPresenter mArtistDetailPresenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mArtistDetailPresenter = new ArtistDetailPresenter();
-
+     /*   ArtistDetailViewModel artistDetailViewModel = new ArtistDetailViewModel();
         final ArtistDetailBinding artistDetailBinding = DataBindingUtil.setContentView(this, R.layout.artist_detail);
-        artistDetailBinding.setCastPresenter(mArtistDetailPresenter);
+        artistDetailBinding.setCastPresenter(artistDetailViewModel);
 
         ApiInterface apiService =
                 ApiClient.getClient().create(ApiInterface.class);
@@ -47,6 +33,6 @@ public class ArtistDetail extends AppCompatActivity {
             public void onFailure(Call<Cast> call, Throwable t) {
                 Log.d(TAG, "failure");
             }
-        });
+        });*/
     }
 }

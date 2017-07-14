@@ -10,7 +10,7 @@
 
         <variable
             name="castPresenter"
-            type="com.example.databinding.artistdetail.ArtistDetailPresenter" />
+            type="com.example.databinding.artistdetail.viewmodel.ArtistDetailViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,8 +21,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{cast.name}"
-            android:onClick="@{castPresenter::getArtistSomething}"
             android:textSize="25sp" />
 
 

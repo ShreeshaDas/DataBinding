@@ -1,11 +1,10 @@
-package com.example.databinding.home;
+package com.example.databinding.home.view.adapter;
 
 import android.content.Context;
 import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -13,7 +12,6 @@ import com.bumptech.glide.Glide;
 import com.example.databinding.R;
 import com.example.databinding.databinding.MovieItemBinding;
 import com.example.databinding.model.Movie;
-import com.example.databinding.model.MovieViewModel;
 
 import java.util.ArrayList;
 
@@ -63,11 +61,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         void bindMovie(Movie movie) {
             movieItemBinding.setMovie(movie);
             movieItemBinding.executePendingBindings();
-            /*if (movieItemBinding.getMovieViewModel() == null) {
-                movieItemBinding.setMovieViewModel(new MovieViewModel(movie));
-            } else {
-                movieItemBinding.getMovieViewModel().setMovieViewModel(movie);
-            }*/
         }
     }
 
